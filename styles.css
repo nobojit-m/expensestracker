@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;  /* Set the font for the entire page */
+    background-color: #f4f4f4;      /* Set background color to a light gray */
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                     /* Remove default padding */
+    display: flex;                  /* Use flexbox layout */
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;            /* Center content vertically */
+    height: 100vh;                  /* Set height to fill the viewport */
+}
+
+/* Container for the main content */
+.container {
+    background-color: white;        /* Set the background color of the container to white */
+    padding: 20px;                  /* Add some padding inside the container */
+    border-radius: 10px;            /* Rounded corners for a smooth look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Add a soft shadow around the container */
+    max-width: 600px;               /* Limit the width of the container */
+    width: 100%;                    /* Make the container responsive */
+}
+
+/* Header Styles */
+h1, h2 {
+    color: #333;                    /* Set the text color to a dark gray */
+    text-align: center;             /* Center-align the headers */
+}
+
+h1 {
+    margin-bottom: 20px;            /* Add space below the main header */
+}
+
+h2 {
+    margin-bottom: 15px;            /* Add space below the sub-header */
+}
+
+/* Input and Select Fields */
+.input-group {
+    margin-bottom: 15px;            /* Add space between input fields */
+}
+
+.input-group label {
+    display: block;                 /* Make labels block-level so they take up full width */
+    margin-bottom: 5px;             /* Add a small space below the label */
+    color: #555;                    /* Set the label text color to a lighter gray */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;                    /* Make the input fields take up the full width of the container */
+    padding: 8px;                   /* Add some padding inside the fields */
+    border: 1px solid #ccc;         /* Add a light border around the fields */
+    border-radius: 5px;             /* Round the corners of the fields */
+    font-size: 16px;                 /* Set a larger font size for better readability */
+}
+
+/* Button Groups */
+.button-group {
+    text-align: center;             /* Center-align the buttons */
+    margin-top: 10px;                /* Add space above the button group */
+}
+
+.button-group button {
+    background-color: #4CAF50;      /* Green background for the button */
+    color: white;                   /* Set text color to white */
+    border: none;                   /* Remove default border */
+    padding: 10px 20px;             /* Add padding inside the button */
+    border-radius: 5px;             /* Round the corners of the button */
+    cursor: pointer;                /* Change cursor to pointer on hover */
+    font-size: 16px;                 /* Set the font size for better readability */
+}
+
+.button-group button:hover {
+    background-color: #45a049;      /* Change button color on hover */
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 20px;                /* Add space above the table */
+}
+
+table {
+    width: 100%;                     /* Make the table take up full width */
+    border-collapse: collapse;       /* Collapse table borders */
+}
+
+table th,
+table td {
+    padding: 10px;                   /* Add padding inside table cells */
+    text-align: left;                /* Align text to the left */
+    border-bottom: 1px solid #ddd;   /* Add a subtle border below each row */
+}
+
+table th {
+    background-color: #f2f2f2;       /* Light gray background for the table headers */
+}
+
+/* Delete Button Styles */
+.delete-btn {
+    background-color: #ff4d4d;      /* Red background for delete button */
+    color: white;                   /* White text color */
+    border: none;                   /* Remove the border */
+    padding: 5px 10px;              /* Add padding inside the button */
+    border-radius: 5px;             /* Round the corners */
+    cursor: pointer;                /* Change cursor on hover */
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;      /* Change the color on hover */
+}
+
+/* Summary Section */
+.summary {
+    margin-top: 20px;                /* Add space above the summary */
+    text-align: center;              /* Center-align the summary text */
+}
+
+.summary p {
+    font-size: 18px;                 /* Set font size for summary text */
+    margin: 10px 0;                  /* Add space around the paragraphs */
+}
+
+/* Clear Button Section */
+.clear-button-group {
+    margin-top: 20px;                /* Add space above the clear button */
+    text-align: center;              /* Center-align the button */
+}
+
+.clear-button-group button {
+    background-color: #FF69B4;      /* Pink background for the clear button */
+    color: white;                   /* White text color */
+    border: none;                   /* Remove the border */
+    padding: 10px 20px;             /* Add padding inside the button */
+    border-radius: 5px;             /* Round the corners */
+    cursor: pointer;                /* Change cursor on hover */
+    font-size: 16px;                 /* Set font size for better readability */
+}
+
+.clear-button-group button:hover {
+    background-color: #FF1493;      /* Change color on hover */
+}
+
+/* Download Button Section */
+.download-button-group {
+    margin-top: 20px;                /* Add space above the download button */
+    text-align: center;              /* Center-align the button */
+}
+
+.download-button-group button {
+    background-color: #1E90FF;      /* Blue background for the download button */
+    color: white;                   /* White text color */
+    border: none;                   /* Remove the border */
+    padding: 10px 20px;             /* Add padding inside the button */
+    border-radius: 5px;             /* Round the corners */
+    cursor: pointer;                /* Change cursor on hover */
+    font-size: 16px;                 /* Set font size for better readability */
+}
+
+.download-button-group button:hover {
+    background-color: #1C86EE;      /* Change color on hover */
+}
+
+/* Additional Section Styles */
+.section {
+    margin-bottom: 20px;             /* Add space below each section */
+}
+
+.section h2 {
+    margin-bottom: 10px;             /* Add space below section headers */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;               /* Reduce padding for smaller screens */
+    }
+
+    .button-group button,
+    .clear-button-group button,
+    .download-button-group button {
+        width: 100%;                 /* Make buttons take full width on small screens */
+        padding: 12px;               /* Increase button padding for better touch support */
+        font-size: 14px;             /* Reduce font size for better fitting */
+    }
+
+    table th,
+    table td {
+        padding: 8px;                /* Reduce table cell padding for small screens */
+    }
+}
